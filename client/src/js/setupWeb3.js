@@ -10,6 +10,4 @@ export default async function setupWeb3() {
     window.dapp.provider = new ethers.providers.Web3Provider(provider);
     console.log('window.dapp.provider:', window.dapp.provider);
   });
-
-  await window.dapp.provider.listAccounts();
 }

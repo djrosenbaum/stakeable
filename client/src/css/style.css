@@ -6,40 +6,48 @@ a {
   text-decoration: none;
 }
 
+input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+}
+
 .section {
   background-color: #3f3f3f;
-  height: 100vh;
   position: relative;
 }
 
 .splash {
-  background: #1db954;
+  background: #fff;
 }
 
 .splash .outer-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90vw;
   text-align: center;
 }
 
 .splash .inner-wrapper {
   display: inline-block;
+  margin-bottom: 100px;
+  padding-top: 50px;
+  text-align: left;
+  width: 500px;
 }
 
 .splash h1 {
-  color: #fff;
   font-size: 40px;
   font-weight: 300;
-  padding-left: 10px;
 }
 
 .splash h2 {
   font-family: 'Open Sans', sans-serif;
   padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   font-size: 24px;
   letter-spacing: 1px;
   color: #3f3f3f;
@@ -47,26 +55,24 @@ a {
 
 .splash h3 {
   color: #333;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .splash h3 span {
-  color: #fff;
+  color: #000;
   font-weight: 200;
   padding-left: 10px;
 }
 
-.splash img {
-  display: none;
-  width: 200px;
+.splash h4 {
+  font-weight: 100;
 }
 
 .splash button {
   display: inline;
   background: none;
-  border-radius: 8px;
+  border-radius: 4px;
   color: #333;
   border-color: #333;
   padding: 6px 20px;
@@ -74,18 +80,59 @@ a {
   font-weight: 200;
   cursor: pointer;
   margin-right: 30px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .splash input {
   background: none;
+  border: 1px solid #ccc;
   color: #333;
-  border-color: #333;
   font-size: 16px;
   font-weight: 200;
-  border-width: 1px;
   padding: 4px;
 }
 
 .splash .field {
   margin-top: 10px;
+}
+
+.splash .brand-wrapper {
+  margin-bottom: 30px;
+}
+
+.splash .status-wrapper {
+  margin-bottom: 50px;
+}
+
+.form-wrapper {
+  margin-bottom: 100px;
+}
+
+.item-preview {
+  text-align: center;
+}
+
+.item-preview img {
+  border: 1px solid #000;
+  box-shadow: 1px 1px 3px 0px #333;
+  width: 100%;
+}
+
+.item-meta {
+  padding: 10px;
+}
+
+.item-meta > div {
+  padding: 4px;
+}
+
+.item-name {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.item-cost {
+  font-size: 14px;
+  font-weight: 300;
 }
